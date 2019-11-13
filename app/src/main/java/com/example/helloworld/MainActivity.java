@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView teks;
+    LinearLayout go;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,14 +24,15 @@ public class MainActivity extends AppCompatActivity {
         Typeface cFont=Typeface.createFromAsset(getAssets(),"font/Kirani A Handwritten Font Demo.otf");
         teks.setTypeface(cFont);
 
-        LinearLayout go =(LinearLayout) findViewById(R.id.go);
+        go =(LinearLayout) findViewById(R.id.go);
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, Login.class);
-                startActivity(i);
+
+                startActivity(new Intent(MainActivity.this, Login.class));
             }
         });
+
 
     }
 }
