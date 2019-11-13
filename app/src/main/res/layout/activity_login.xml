@@ -36,7 +36,8 @@
         android:gravity="center"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="Username">
+        android:inputType="textEmailAddress"
+        android:hint="Email">
     </EditText>
 
     <EditText
@@ -47,6 +48,7 @@
         android:gravity="center"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:inputType="textPassword"
         android:hint="Password">
     </EditText>
     <Button

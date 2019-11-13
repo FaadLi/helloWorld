@@ -16,19 +16,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:textSize="20dp"
-            android:text="Haloo   ">
+            android:text="Haloo   "
+            android:textSize="20dp">
 
         </TextView>
+
         <TextView
             android:id="@+id/txtEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Emailnya"
             android:textSize="20dp"
-            android:text="Emailnya">
+            tools:layout_editor_absoluteX="98dp"
+            tools:layout_editor_absoluteY="-1dp">
 
         </TextView>
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:layout_marginLeft="0dp">
+
+        </Button>
 
     </LinearLayout>
 
@@ -41,4 +52,5 @@
     android:gravity="center">
 
 </TextView>
+
 </LinearLayout>
