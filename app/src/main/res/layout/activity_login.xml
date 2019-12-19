@@ -63,5 +63,14 @@
         android:textColor="#091"
         android:text="Sign in">
     </Button>
+    <TextView
+        android:id="@+id/lupaPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Lupa Password ?">
+
+    </TextView>
 
 </LinearLayout>

@@ -21,7 +21,7 @@ public class Login extends AppCompatActivity {
 
     Button btnLogin;
     EditText etEmail, etPassword;
-    TextView registrasi;
+    TextView registrasi, resetPass;
     private FirebaseAuth mAuth;
 
     @Override
@@ -34,6 +34,7 @@ public class Login extends AppCompatActivity {
         etEmail     = findViewById(R.id.etEmail);
         etPassword  = findViewById(R.id.etPassword);
         registrasi  = findViewById(R.id.registrasi);
+        resetPass   = findViewById(R.id.lupaPass);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,13 +47,13 @@ public class Login extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    Toast.makeText(Login.this, "Authentication success.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login.this, "Selamat Datang di Hello World", Toast.LENGTH_SHORT).show();
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     startActivity(new Intent(Login.this, Home.class));
                                 } else {
                                     // If sign in fails, display a message to the user.
                                     //startActivity(new Intent(Login.this,AmbilGambar.class));
-                                    Toast.makeText(getApplicationContext(), "Authentication failed.",
+                                    Toast.makeText(getApplicationContext(), "Email atau Password Salah",
                                             Toast.LENGTH_SHORT).show();
                                 }
 
@@ -66,6 +67,13 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Login.this, Registrasi.class));
+            }
+        });
+
+        resetPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, resetPass.class));
             }
         });
     }

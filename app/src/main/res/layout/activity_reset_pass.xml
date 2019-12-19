@@ -9,27 +9,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:gravity="left"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:textSize="20dp">
-
-    </TextView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="left"
+        android:gravity="center"
         android:layout_marginTop="70dp"
         android:layout_marginLeft="30dp"
         android:textSize="30dp"
-        android:text="Registrasi">
+        android:text="Hello World">
 
     </TextView>
 
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/masukanemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -37,31 +27,20 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:inputType="textEmailAddress"
-        android:hint="Email">
+        android:hint="Masukkan Email">
     </EditText>
 
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:gravity="left"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:inputType="textPassword"
-        android:hint="Password">
-    </EditText>
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/resetpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:textSize="30dp"
-        android:shadowColor="#091"
-        android:textColor="#0E8AB1"
-        android:text="Sign up">
+        android:shadowColor="#F7DF15"
+        android:textColor="#EB2626"
+        android:text="Reset">
     </Button>
 
 </LinearLayout>
