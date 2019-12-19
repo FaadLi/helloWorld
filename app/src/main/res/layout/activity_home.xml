@@ -36,8 +36,9 @@
             android:id="@+id/btnSignOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Out"
-            android:layout_marginLeft="0dp">
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign Out">
 
         </Button>
 
@@ -48,9 +49,35 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="100dp"
     android:textSize="50dp"
-    android:text="HOME"
+    android:text="Ambil Gambar"
     android:gravity="center">
 
 </TextView>
+<ImageView
+    android:id="@+id/btnambilgambar"
+    android:layout_width="50pt"
+    android:layout_height="50dp"
+    android:src="@mipmap/camera"
+
+    android:layout_gravity="center">
+
+</ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgplaceholder"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:targetApi="O"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
 
 </LinearLayout>
